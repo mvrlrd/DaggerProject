@@ -1,7 +1,7 @@
-package ru.mvrlrd.daggerproject;
+package ru.mvrlrd.daggerproject.noDi;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import ru.mvrlrd.daggerproject.R;
 import android.os.Bundle;
 
 //Создать NoDiActivity, классы Red, White, Green.
@@ -13,11 +13,15 @@ import android.os.Bundle;
 
 //Создать DaggerActivity. Решить 1ое задание с применение dagger
 
-public class MainActivity extends AppCompatActivity {
+public class NoDiActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+       White white = new White();
+       Red red = new Red();
     }
 }
